@@ -7,6 +7,7 @@ namespace Triangle_Vorm
         public double a;
         public double b;
         public double c;
+        public double h;
     }
 }
 public Triangle(double A, double B, double C)
@@ -15,6 +16,18 @@ public Triangle(double A, double B, double C)
     b = B;
     c = C;
 }
+
+public Triangle()
+{
+   
+}
+
+public Triangle(double A, double H)
+{
+    a = A;
+    h = H;
+}
+
 public string outputA()
 {
     return Convert.ToString(a);
@@ -29,6 +42,13 @@ public string outputC()
 }
 public double Perimeter()
 {
+    double p = 0;
+    p = a + b + c;
+    return p;
+}
+public double Surface()
+{
+    double s = 0;
     double p = 0;
     p = (a + b + c) / 2;
     s = Math.Sqrt((p * (p - a) * (p - b) * (p - c)));
@@ -55,6 +75,13 @@ public double GetSetC
     { return c; }
     set
     { c = value; }
+}
+public double GetSetH
+{
+    get 
+    { return h; }
+    set
+    { h = value; }
 }
 
 public bool ExistTriangle
