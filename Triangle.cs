@@ -37,7 +37,7 @@ public double Perimeter()
 
 public double GetSetA
 {
-    get
+    get // устанавливаем
     { return a; }
     set
     { a = value; }
