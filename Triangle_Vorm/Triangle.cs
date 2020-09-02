@@ -9,7 +9,7 @@ namespace Triangle_Vorm
         public double c;
         public double h;
 
-        public Triangle(double A, double B, double C)
+        public Triangle(double A, double B, double C, double H)
         {
             a = A;
             b = B;
@@ -57,6 +57,7 @@ namespace Triangle_Vorm
             s = Math.Sqrt((p * (p - a) * (p - b) * (p - c)));
             return s;
         }
+
 
         public double GetSetA
         {
